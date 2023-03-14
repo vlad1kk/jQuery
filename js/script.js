@@ -40,15 +40,24 @@
 // Методи .fadeOut() та fadeIn():
 // $('.mainText').fadeOut(2000).fadeIn(3000);
 
-function fadeOutElement(element, time){
-    if(time > 5000 || time < 1000 ||isNaN(time)){
-        return false;
-    } else{
-        let className = '.' + element;
-        $(className).fadeOut(time);
-    }
-}
-fadeOutElement('mainText', 200)
+// function fadeOutElement(element, time){
+//     if(time > 5000 || time < 1000 ||isNaN(time)){
+//         return false;
+//     } else{
+//         let className = '.' + element;
+//         $(className).fadeOut(time);
+//     }
+// }
+// fadeOutElement('mainText', 2000)
+
+// =============================================
+// Метод .fadeTo():
+// $('.mainText').fadeTo(2500, 0.5).fadeTo(2500, 1);
+
+// =============================================
+// Методи .slideUp(), .slideDown():
+$('.mainText').slideUp(2000).slideDown(2000);
+
 
 
 
