@@ -55,8 +55,33 @@
 // $('.mainText').fadeTo(2500, 0.5).fadeTo(2500, 1);
 
 // =============================================
-// Методи .slideUp(), .slideDown():
-$('.mainText').slideUp(2000).slideDown(2000);
+// // Методи .slideUp(), .slideDown():
+// $('.mainText').slideUp(2000).slideDown(2000);
+
+// =============================================
+// Метод .attr();
+// let src = $('.logo img').attr('src');
+// alert(src);
+//Покаже в алерт значення src.
+
+// let src = $('.logo img').attr('src', 'img/icon1.png');
+//Змінить значення src на img/icon1.png.
+
+// $('.logo img').attr('title', 'Підсказка');
+//Добавить атрибут 'title' з значенням 'Підсказка'
+
+// =============================================
+// Метод .removeAttr() - видаляє атрибут;
+// $('.logo img').removeAttr('src');
+
+//Функція за допомогою якої можна додати новий атрибут з своїм значенням:
+// function changeAttr(element, attr ,newValue){
+//     const className = '.' + element;
+//     $(className).attr(attr, newValue);
+// }
+// changeAttr('logo img', 'title', 'text');
+
+
 
 
 
