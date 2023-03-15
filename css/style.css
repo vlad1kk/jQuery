@@ -10,6 +10,10 @@
     color: white;
  }
  /**/
+ .border{
+   background-color: #00c843;
+   border: 3px solid green;
+ }
  .h2 {
     font-size: 50px;
     color: #ffffff;
