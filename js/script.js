@@ -145,5 +145,28 @@
 
 // =============================================
 // Події на jQuery:
+// 1. mouseover:
+// $('.logo').mouseover(()=>{
+//     alert('event mouseover');
+// })
 
+// 2. mouseout:
+// $('.logo').mouseout(()=>{
+//     alert('event mouseout');
+// })
+
+// 3. click:
+// $('.logo').click(()=>{
+//     alert('event click');
+// })
+
+// 4. mousemove:
+// $('.logo').mousemove(()=>{
+//     alert('event mousemove');
+// })
+
+// 4. mouseup:
+$('.logo').mouseup(()=>{
+    alert('event mouseup');
+})
 
