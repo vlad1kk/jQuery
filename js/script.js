@@ -160,13 +160,59 @@
 //     alert('event click');
 // })
 
+// $('.arrowDown').click(function(){
+//     let clone = $(this).clone();
+//     $(this).after(clone);
+// })
+
 // 4. mousemove:
 // $('.logo').mousemove(()=>{
 //     alert('event mousemove');
 // })
 
 // 4. mouseup:
-$('.logo').mouseup(()=>{
-    alert('event mouseup');
+// $('.logo').mouseup(()=>{
+//     alert('event mouseup');
+// })
+
+// 5. scroll:
+// $(window).scroll(()=>{
+//         alert('event scroll');
+//     })
+
+// 6. hover:
+// First variable:
+// const link = $('menu li a');
+
+// link.mouseover(function(){
+//     $(this).addClass('border');
+// })
+// link.mouseout(function(){
+//     $(this).removeClass('border');
+// })
+
+// Second variable:
+// const link = $('menu li a');
+
+// link.hover(
+//     function(){
+//     $(this).addClass('border');
+// },
+//     function(){
+//     $(this).removeClass('border');
+// })
+
+// 7. Передавання в функцію параметра, наприклад е:
+// $('.mainText').click(function(e){
+//     alert(e.target);
+// })
+//Можна відстежувати клавіши, координати...
+
+// 8. Методи які зупиняють виконання певного завдання(.preventDefault() та return false):
+$('.arrowDown').click(function(e){
+    e.preventDefault();
 })
 
+$('.arrowDown').click(function(){
+    return false;
+})
