@@ -175,12 +175,12 @@
 //     alert('event mouseup');
 // })
 
-// 5. scroll:
+// 5. .scroll:
 // $(window).scroll(()=>{
 //         alert('event scroll');
 //     })
 
-// 6. hover:
+// 6. .hover:
 // First variable:
 // const link = $('menu li a');
 
@@ -209,10 +209,40 @@
 //Можна відстежувати клавіши, координати...
 
 // 8. Методи які зупиняють виконання певного завдання(.preventDefault() та return false):
-$('.arrowDown').click(function(e){
-    e.preventDefault();
-})
+// $('.arrowDown').click(function(e){
+//     e.preventDefault();
+// })
 
-$('.arrowDown').click(function(){
-    return false;
+// $('.arrowDown').click(function(){
+//     return false;
+// })
+
+// Метод .slideToggle() - за допомогою якого можна приховати весь елемент(він ніби скрутиться наверх):
+// $('.button').click(function(){
+//     $('.gallery').slideToggle(500);
+// })
+
+
+// Practice:
+$('.small a').click(function(e){
+    if($('.big img').attr('src')!==$(this).attr('href')){
+    $('.big img').hide().attr('src', $(this).attr('href')).fadeIn(1000);
+}
+    e.preventDefault();
+});
+$('.button').click(function(){
+    $('.gallery').slideToggle(500);
+    if($('.button').text()=='-'){
+        $('.button').text('+');
+    } else {
+        $('.button').text('-');
+    }
+})
+$('.small a img').click(function(){
+    $('.small a img').fadeTo(500, 1).css({
+        'border': 'none'
+    });
+    $(this).fadeTo(500, 0.6).css({
+        'border': '1px dotted green'
+    });
 })
