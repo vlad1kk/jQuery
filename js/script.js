@@ -222,27 +222,62 @@
 //     $('.gallery').slideToggle(500);
 // })
 
+// ============================================
 
 // Practice:
-$('.small a').click(function(e){
-    if($('.big img').attr('src')!==$(this).attr('href')){
-    $('.big img').hide().attr('src', $(this).attr('href')).fadeIn(1000);
-}
-    e.preventDefault();
-});
-$('.button').click(function(){
-    $('.gallery').slideToggle(500);
-    if($('.button').text()=='-'){
-        $('.button').text('+');
-    } else {
-        $('.button').text('-');
-    }
-})
-$('.small a img').click(function(){
-    $('.small a img').fadeTo(500, 1).css({
-        'border': 'none'
-    });
-    $(this).fadeTo(500, 0.6).css({
-        'border': '1px dotted green'
-    });
-})
+// $('.small a').click(function(e){
+//     if($('.big img').attr('src')!==$(this).attr('href')){
+//     $('.big img').hide().attr('src', $(this).attr('href')).fadeIn(1000);
+// }
+//     e.preventDefault();
+// });
+// $('.button').click(function(){
+//     $('.gallery').slideToggle(500);
+//     if($('.button').text()=='-'){
+//         $('.button').text('+');
+//     } else {
+//         $('.button').text('-');
+//     }
+// })
+// $('.small a img').click(function(){
+//     $('.small a img').fadeTo(500, 1).css({
+//         'border': 'none'
+//     });
+//     $(this).fadeTo(500, 0.6).css({
+//         'border': '1px dotted green'
+//     });
+// })
+
+// ============================================
+// Вибірка і фільтрація елементів форми:
+
+// Щоб вибрати всі елементи checkbox на сторінці:
+// $(':checkbox').fadeOut(1000);
+//Всі елементи checkbox які є на сторінці зникнуть через 1сек.
+
+//Якщо потрібно щоб зникли елементи тільки у потрібній формі потрібно перед цим вказати клас або інший селектор:
+// $('.form1 :checkbox').fadeOut(1000);
+
+// Щоб вибрати всі елементи radio на сторінці:
+// $(':radio').fadeOut(1000);
+
+// Щоб вибрати всі елементи submit на сторінці:
+// $(':submit').fadeOut(1000);
+
+// Щоб вибрати всі елементи reset на сторінці:
+// $(':reset').fadeOut(1000);
+
+// Щоб вибрати всі елементи file на сторінці:
+// $(':file').fadeOut(1000);
+
+// Щоб вибрати всі елементи button на сторінці:
+// $(':button').fadeOut(1000);
+
+// Щоб вибрати всі елементи text на сторінці:
+// $(':text').fadeOut(1000);
+
+// Щоб вибрати всі елементи password на сторінці:
+// $(':password').fadeOut(1000);
+
+// Щоб вибрати всі елементи input на сторінці:
+// $(':input').fadeOut(1000);

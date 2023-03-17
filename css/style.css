@@ -230,3 +230,10 @@
 .button:hover {
    cursor: pointer;
 }
+/* ========================================= */
+.form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 15px;
+}
