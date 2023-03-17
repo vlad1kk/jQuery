@@ -281,3 +281,42 @@
 
 // Щоб вибрати всі елементи input на сторінці:
 // $(':input').fadeOut(1000);
+
+// Якщо потрібно виконати якісь маніпуляції, наприклад до checkbox який вже вибраний:
+// $('.form :checkbox:checked').fadeOut(1000);
+// *Між.form та :checkbox обовʼязково пробіл. Між :checkbox та :checked пробіл не потрібен!!!
+
+// ============================================
+// Метод .val() - виористовується для отримання значення textarea, input і т.д., наприклад:
+
+// Для textarea:
+// $(':submit').click(function(){
+//     let value = $('textarea').val();
+//     alert(value);
+// })
+
+// Для checkbox:
+// $(':submit').click(function(){
+// let value = $(':checkbox:checked').each(function(){
+//     let value = $(this).val();
+//     alert(value);
+// })
+// })
+// *Обовʼязково повинно бути value в checkbox
+
+// ============================================
+// Метод .submit():
+// $('.form').submit(function(e){
+//     if($('textarea').val() == ''){
+//         e.preventDefault();
+//         alert('nothing is written');
+//     }
+// })
+
+// Метод .focus():
+$('textarea').focus(function(){
+    $(this).css({
+        'border' : '1px solid red',
+        'background' : 'green'
+    })
+})
