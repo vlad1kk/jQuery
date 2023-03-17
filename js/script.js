@@ -314,9 +314,52 @@
 // })
 
 // Метод .focus():
-$('textarea').focus(function(){
-    $(this).css({
-        'border' : '1px solid red',
-        'background' : 'green'
-    })
+// $('textarea').focus(function(){
+//     $(this).css({
+//         'border' : '1px solid red',
+//         'background' : 'green'
+//     })
+// })
+
+// ============================================
+// Метод .blur():
+// $('textarea').focus(function(){
+//         $(this).addClass('border')
+//     });
+// $('textarea').blur(function(){
+//         $(this).removeClass('border')
+//     });
+
+// ============================================
+// Метод .change():
+// $('#select1').change(function(){
+//     let v = $('#select1 :selected').val();
+//     switch(v){
+//         case '1':
+//         $('#select2').html('<option value="1" selected>Поле номер 1</option>');
+//         break;
+//         case '2':
+//         $('#select2').html('<option value="2" selected>Поле номер 2</option>');
+//         break;
+//         case '3':
+//         $('#select2').html('<option value="4" selected>Поле номер 3</option>');
+//         break;
+//         case '4':
+//         $('#select2').html('<option value="4" selected>Поле номер 4</option>');
+//         break;
+//     }
+// })
+//Після вибору в #select1 якогось елементу він відразу зʼявиться в #select2
+
+// ============================================
+// Атрибут disabled; - за допомогою якого можна заблокувати, наприклад поле введення і т.д.:
+$(':submit').click(function(e){
+    $('.text2').attr('disabled', 'disabled');
+    e.preventDefault();
 })
+$(':reset').click(function(e){
+    $('.text2').removeAttr('disabled');
+    e.preventDefault();
+})
+
+
